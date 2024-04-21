@@ -1,0 +1,86 @@
+---
+import MainLayout from "~/layouts/MainLayout.astro";
+
+import Intro from "~/components/Intro.tsx";
+import Resume from "~/components/Resume.tsx";
+import Contacts from "~/components/Contact.tsx";
+import Projects from "~/components/Projects.tsx";
+import DevelopedBy from "~/components/DevelopedBy.tsx";
+import Globe from "~/components/Globe.tsx";
+import Stacks from "~/components/Stacks.tsx";
+import Socials from "~/components/Socials.tsx";
+
+---
+
+<MainLayout>
+  <main
+    class="grid grid-cols-1 gap-3 list-none lg:grid-cols-3 lg:grid-rows-3 xl:grid-cols-4 xl:grid-rows-4 my-5 mx-5"
+  >
+    <div class="card lg:row-span-2 ring-1   h-[100vh] p-8">
+      <Intro client:idle />
+    </div>
+    <div class="card ring-1   justify-between  h-[50vh] flex flex-col p-8 ">
+      <DevelopedBy client:idle />
+    </div>
+    <div class="card ring-1 lg:row-span-2 hidden h-[100vh] sm:flex flex-col  lg:row-start-2 md:grid-cols-2 md:grid lg:gap-0 md:items-center md:gap-12 lg:grid-cols-none lg:col-start-2 lg:col-span-2 p-8  ">
+      <Projects client:only />
+      
+    </div>
+
+    <div class="card ring-1  h-[50vh] ring-primary/5 flex flex-col justify-between items-center  shadow-xl dark:shadow-thick p-8 overflow-hidden text-center lg:text-left">
+      <Resume client:idle/>
+    </div>
+    <div class="card ring-1 mt-[-0.75rem] lg:row-start-3 items-center h-[50vh] flex p-8 flex-col justify-center  relative  overflow-hidden ">
+      <Socials />
+    </div>
+    <div class="card lg:row-span-2 h-[100vh]  ring-1  p-8">
+      <!-- <Stacks /> -->
+
+    </div>
+    <div class="card ring-1 mt-[-0.75rem] flex flex-col p-8 h-[50vh] justify-center items-center  overflow-hidden relative lg:col-span-2 lg:row-start-4 ">
+      <Contacts />
+    </div>
+    <div class="card lg:col-span-2 mt-[-0.75rem] xl:col-span-1 h-[calc(100vh+0.75rem)] flex flex-col  lg:row-span-2 ring-1 p-8">
+      <Stacks />
+    </div>
+    <div
+        class="card lg:col-span-1 ring-1 mt-[-0.75rem] p-8 lg:row-start-4 h-[50vh] flex flex-col justify-center"
+      >
+          <Globe client:idle />
+        
+      </div>
+      
+  </main>
+</MainLayout>
+
+<style>
+  .card {
+    z-index: 1;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    background:
+      padding-box linear-gradient(rgb(var(--neutral-2)), rgb(var(--neutral-2))),
+      border-box linear-gradient(rgb(var(--neutral-4)), rgb(var(--neutral-3) / 0.5));
+    overflow: hidden;
+
+    @apply transition ring-2 ring-offset-0 ring-neutral-5 ring-offset-neutral-1;
+
+    &:hover {
+      @apply ring-offset-2 lg:ring-offset-4;
+    }
+  }
+
+  .card::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/nnnoise.svg");
+    overflow: hidden;
+  }
+</style>
+
