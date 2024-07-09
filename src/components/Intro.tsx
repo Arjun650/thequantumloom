@@ -3,7 +3,7 @@ export default () => {
     <div>
       <div className="relative flex items-center gap-x-4">
         <img
-          src=""
+          src="\pfp.jpg"
           alt=""
           className="h-10 w-10 rounded-full ring-1"
         />
@@ -11,11 +11,11 @@ export default () => {
           <p className="font-semibold text-primary">
             <a href="#">
               <span className="absolute inset-0"></span>
-              YOUR NAME
+              Shashank Reddy
             </a>
           </p>
           <p className="text-zinc-500">
-            ROLE
+            a.k.a Quan7um L00m
           </p>
         </div>
       </div>
@@ -23,10 +23,10 @@ export default () => {
         Hey, welcome to my site!
       </p>
       <p className="mt-4 text-sm text-zinc-500  className font-light lg:text-xl">
-        I'm a digital designer, developer, and surfer from Malibu. In the digital world, I craft interfaces and dive into coding intricacies.
+      Embracing the art of cryptography, I actively compete in CTF challenges alongside team bi0sblr, diving into the depths of cybersecurity.
         <br />
         <br />
-        Beyond screens, I find solace and joy riding waves along Malibu's shores. My life blends tech and nature, coding sessions, and catching waves.
+        Driven by an unwavering passion for computer science, I constantly push boundaries, seeking innovation and growth in every project I undertake.
       </p>
     </div>
   );

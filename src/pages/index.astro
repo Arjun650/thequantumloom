@@ -16,7 +16,7 @@ import Socials from "~/components/Socials.tsx";
   <main
     class="grid grid-cols-1 gap-3 list-none lg:grid-cols-3 lg:grid-rows-3 xl:grid-cols-4 xl:grid-rows-4 my-5 mx-5"
   >
-    <div class="card lg:row-span-2 ring-1   h-[100vh] p-8">
+    <div class="card lg:row-span-2 ring-1  h-[100vh] p-8 ">
       <Intro client:idle />
     </div>
     <div class="card ring-1   justify-between  h-[50vh] flex flex-col p-8 ">
@@ -27,24 +27,24 @@ import Socials from "~/components/Socials.tsx";
       
     </div>
 
-    <div class="card ring-1  h-[50vh] ring-primary/5 flex flex-col justify-between items-center  shadow-xl dark:shadow-thick p-8 overflow-hidden text-center lg:text-left">
+    <div class="card ring-1 h-[50vh] ring-primary/5 flex flex-col justify-between items-center  shadow-xl dark:shadow-thick p-8 overflow-hidden text-center lg:text-left">
       <Resume client:idle/>
     </div>
-    <div class="card ring-1 mt-[-0.75rem] lg:row-start-3 items-center h-[50vh] flex p-8 flex-col justify-center  relative  overflow-hidden ">
+    <div class="card ring-1 md:mt-[-0.75rem] lg:row-start-3 items-center h-[50vh] flex p-8 flex-col justify-center  relative  overflow-hidden ">
       <Socials />
     </div>
     <div class="card lg:row-span-2 h-[100vh]  ring-1  p-8">
-      <!-- <Stacks /> -->
+      <Stacks />
 
     </div>
-    <div class="card ring-1 mt-[-0.75rem] flex flex-col p-8 h-[50vh] justify-center items-center  overflow-hidden relative lg:col-span-2 lg:row-start-4 ">
+    <div class="card ring-1 md:mt-[-0.75rem] flex flex-col p-8 h-[50vh] justify-center items-center  overflow-hidden relative lg:col-span-2 lg:row-start-4 ">
       <Contacts />
     </div>
-    <div class="card lg:col-span-2 mt-[-0.75rem] xl:col-span-1 h-[calc(100vh+0.75rem)] flex flex-col  lg:row-span-2 ring-1 p-8">
+    <div class="card lg:col-span-2 md:mt-[-0.75rem] xl:col-span-1 h-[calc(100vh+0.75rem)] flex flex-col  lg:row-span-2 ring-1 p-8">
       <Stacks />
     </div>
     <div
-        class="card lg:col-span-1 ring-1 mt-[-0.75rem] p-8 lg:row-start-4 h-[50vh] flex flex-col justify-center"
+        class="card lg:col-span-1 ring-1 md:mt-[-0.75rem] p-8 lg:row-start-4 h-[50vh] flex flex-col justify-center"
       >
           <Globe client:idle />
         

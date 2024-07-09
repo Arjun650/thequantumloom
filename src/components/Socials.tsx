@@ -5,7 +5,7 @@ export default () => {
 
       <div  className="w-full">
           <p
-             className="text-xl font-normal tracking-tight text-primary dark:text-white lg:text-8xl"
+             className="text-5xl font-normal tracking-tight text-primary dark:text-white  lg:text-8xl @screen sm:text-5xl"
           >
             Find me on
           </p>
@@ -16,7 +16,7 @@ export default () => {
 
           {/* MAIL */}
           <a
-            href="#_"
+            href="mailto:amireddy.shashank31@gmail.com"
              className="flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-100 dark:hover:bg-primary ring-1 bg-zinc-50 dark:ring-white/10 ring-primary/5 dark:bg-tertiary rounded-lg hover:ring-primary/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
           >
             <svg
@@ -35,7 +35,7 @@ export default () => {
           </a>
           {/* GITHUB */}
           <a
-            href="#_"
+            href="https://github.com/shashank-amireddy"
              className="flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-100 dark:hover:bg-primary ring-1 bg-zinc-50 dark:ring-white/10 ring-primary/5 dark:bg-tertiary rounded-lg hover:ring-primary/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
           >
             <svg
@@ -55,7 +55,7 @@ export default () => {
           
           {/* twitter */}
           <a
-            href="#_"
+            href="https://x.com/Shanksreddy"
              className="flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-100 dark:hover:bg-primary ring-1 bg-zinc-50 dark:ring-white/10 ring-primary/5 dark:bg-tertiary rounded-lg hover:ring-primary/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
           >
             <svg
@@ -74,7 +74,7 @@ export default () => {
           </a>
           {/* linkedin */}
           <a
-            href="#_"
+            href="https://www.linkedin.com/in/shashank-reddy-a42b70202/"
              className="flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-100 dark:hover:bg-primary ring-1 bg-zinc-50 dark:ring-white/10 ring-primary/5 dark:bg-tertiary rounded-lg hover:ring-primary/5 dark:hover:ring-white/20 duration-300 group transition-all h-12 w-12"
           >
             <svg

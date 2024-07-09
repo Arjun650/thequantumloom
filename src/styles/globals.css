@@ -37,6 +37,13 @@ body {
   background: rgb(var(--primary-8));
   color: white;
 }
+
+input::selection,
+textarea::selection {
+  background: rgb(var(--primary-8)); /* Highlight color */
+  color: white; /* Text color */
+}
+
 @font-face {
   font-family: 'Syncrone';
   src: url('../../syncrone-font//syncrone.otf') format('opentype');

@@ -3,7 +3,7 @@ import { useTrail, animated } from "@react-spring/web";
 import '../styles/globals.css';
 
 const text = "Quan7umL00m".split("");
-const titles = ["CTF Player", "Crypto Enthusiast", "Frontend Developer", "Hello"];
+const titles = ["CTF Player", "Crypto Enthusiast", "Frontend Developer"];
 
 const CoolTextAnimation = () => {
   const [titleIndex, setTitleIndex] = useState(0);
@@ -46,7 +46,7 @@ const CoolTextAnimation = () => {
 
   return (
     <div className="relative flex items-center justify-center p-1 w-full h-full">
-      <div className="flex items-center gap-2 font-Syncrone font-medium text-2xl lg:text-3xl select-none special">
+      <div className="flex items-center gap-2 font-Syncrone font-medium text-3xl lg:text-3xl select-none special">
         {trail.map((props, i) => (
           <animated.span key={i} style={props}>
             {text[i]}
@@ -57,7 +57,7 @@ const CoolTextAnimation = () => {
       <div className="absolute inset-x-0 bottom-1 mb-8 font-mono text-neutral-10 text-xs text-center">
       <span style={{ color: `rgb(var(--${titleIndex % 2 === 0 ? "neutral" : "primary"}-9))` }}>
           <a
-            href="https://github.com/flamrdevs"
+            href="https://github.com/shashank-amireddy"
             className="inline-block transition duration-300 hover:-translate-y-px outline-none hover:text-primary-10 focus-visible:text-primary-10"
             target="_blank"
             rel="noopener noreferrer"
