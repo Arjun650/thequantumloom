@@ -4,11 +4,12 @@ import MainLayout from "~/layouts/MainLayout.astro";
 import Intro from "~/components/Intro.tsx";
 import Resume from "~/components/Resume.tsx";
 import Contacts from "~/components/Contact.tsx";
-import Projects from "~/components/Projects.tsx";
+import Game from "~/components/GameGit.tsx";
 import DevelopedBy from "~/components/DevelopedBy.tsx";
 import Globe from "~/components/Globe.tsx";
-import Stacks from "~/components/Stacks.tsx";
+import Projects from "~/components/Projects.tsx";
 import Socials from "~/components/Socials.tsx";
+import Blog from "~/components/Blog.tsx";
 
 ---
 
@@ -23,7 +24,7 @@ import Socials from "~/components/Socials.tsx";
       <DevelopedBy client:idle />
     </div>
     <div class="card ring-1 lg:row-span-2 hidden h-[100vh] sm:flex flex-col  lg:row-start-2 md:grid-cols-2 md:grid lg:gap-0 md:items-center md:gap-12 lg:grid-cols-none lg:col-start-2 lg:col-span-2 p-8  ">
-      <Projects client:only />
+      <Game client:only />
       
     </div>
 
@@ -34,14 +35,15 @@ import Socials from "~/components/Socials.tsx";
       <Socials />
     </div>
     <div class="card lg:row-span-2 h-[100vh]  ring-1  p-8">
-      <Stacks />
+      <Projects />
 
     </div>
     <div class="card ring-1 md:mt-[-0.75rem] flex flex-col p-8 h-[50vh] justify-center items-center  overflow-hidden relative lg:col-span-2 lg:row-start-4 ">
       <Contacts />
     </div>
     <div class="card lg:col-span-2 md:mt-[-0.75rem] xl:col-span-1 h-[calc(100vh+0.75rem)] flex flex-col  lg:row-span-2 ring-1 p-8">
-      <Stacks />
+      
+      <Blog />
     </div>
     <div
         class="card lg:col-span-1 ring-1 md:mt-[-0.75rem] p-8 lg:row-start-4 h-[50vh] flex flex-col justify-center"

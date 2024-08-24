@@ -1,17 +1,17 @@
 export default () => {
     return (
         <div className="relative p-8 text-center w-full">
-            <p className="text-5xl tracking-tight font-medium text-primary dark:text-white md:text-6xl">Contact Me</p>
+            <p className="text-4xl tracking-tight font-semibold text-primary dark:text-white md:text-6xl">Contact Me</p>
             <div className="mt-6 sm:flex w-full lg:max-w-sm mx-auto">
-                <form className="w-full" method="POST" action="/submit-form">
+                <form className="w-full" method="POST" action="https://getform.io/f/bmdpddva">
                     <div className="flex flex-col sm:flex-row">
                         <div className="mb-4 sm:mr-2 w-full sm:w-1/2">
                             <label htmlFor="name" className="sr-only">Name</label>
                             <input type="text" name="name" id="name" className="block w-full h-12 px-4 py-2 text-sm text-zinc-500 bg-transparent dark:bg-tertiary ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Your Name" required />
                         </div>
                         <div className="mb-4 sm:ml-2 w-full sm:w-1/2">
-                            <label htmlFor="email" className="sr-only">Organisation</label>
-                            <input type="email" name="email" id="email" className="block w-full h-12 px-4 py-2 text-sm text-zinc-500 bg-transparent dark:bg-tertiary ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Your Organisation" required />
+                            <label htmlFor="email" className="sr-only">Email</label>
+                            <input type="email" name="email" id="email" className="block w-full h-12 px-4 py-2 text-sm text-zinc-500 bg-transparent dark:bg-tertiary ring-1 dark:ring-white/10 ring-primary/5 rounded-lg appearance-none focus:ring-white/20 placeholder-zinc-400 focus:border-zinc-300 focus:bg-primary focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Your Email" required />
                         </div>
                     </div>
                     <div className="mb-4">
