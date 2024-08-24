@@ -55,7 +55,7 @@ const GithubCalendar: React.FunctionComponent<Props> = ({ username, ...props }) 
 
     return (
         <Calendar
-            // @ts-expect-error
+        
             data={selectLastNDays(data.contributions)}
             theme={{
                 dark: ['#312e33', '#00FF00'],
